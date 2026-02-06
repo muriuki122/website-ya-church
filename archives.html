@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title will be set by JavaScript -->
+    <title id="site-title">PDF Archive</title>
+
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style/ARCHIVE.css">
+</head>
+
+<body>
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <div class="service-times">
+                <span><i class="fas fa-church"></i> Saturday 9:00 AM | Friday 6:30 PM</span>
+            </div>
+            <div class="language-switcher">
+                <i class="fas fa-globe"></i>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="sw">Kiswahili</option>
+                    <option value="rw">Kinyarwanda</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/minorah image.jpg" alt="Church Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1 data-key="siteTitle">Kaloleni Church</h1>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="watch online.html"><i class="fas fa-video"></i> Watch online</a></li>
+                    <li><a href="about us.html"><i class="fas fa-book-bible"></i> about us</a></li>
+                    <li><a href="Archive.html" class="active"><i class="fas fa-archive"></i> Archives</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero container">
+        <h2 id="hero-title" data-key="heroTitle">Explore Our Document Collection</h2>
+        <p id="hero-subtitle" data-key="heroSubtitle">Browse, preview, and download from our extensive library.</p>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="container">
+
+        <div class="archive-layout-wrapper">
+            <!-- Main Content Area (Original Structure) -->
+            <div class="main-archive-content">
+                <!-- Controls: Search and Filter -->
+                <div class="controls-wrapper">
+                    <div class="search-box">
+                        <input type="text" id="search-input" data-key-placeholder="searchPlaceholder">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="filter-box">
+                        <i class="fas fa-filter"></i>
+                        <span class="filter-label">Category:</span>
+                        <select id="category-filter">
+                            <!-- Categories will be populated by JavaScript -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Document List Header -->
+                <div class="list-header">
+                    <h3 data-key="documentsTitle">Documents</h3>
+                    <span id="doc-count" data-key="docCount"></span>
+                </div>
+
+                <!-- Document Grid -->
+                <div id="document-list" class="document-grid">
+                    <!-- Documents will be populated by JavaScript -->
+                </div>
+
+                <!-- Pagination -->
+                <nav id="pagination" class="pagination-nav"></nav>
+            </div>
+
+            <!-- Side Lesson Column (New Addition) -->
+            <aside class="lessons-sidebar">
+                <div class="sidebar-header">
+                    <h3><i class="fas fa-scroll"></i> Bible Lessons</h3>
+                    <div class="sidebar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="lessons-search" placeholder="Search lessons...">
+                    </div>
+                </div>
+
+                <div class="quarter-pills">
+                    <button class="quarter-pill active" data-quarter="1">Q1</button>
+                    <button class="quarter-pill" data-quarter="2">Q2</button>
+                    <button class="quarter-pill" data-quarter="3">Q3</button>
+                    <button class="quarter-pill" data-quarter="4">Q4</button>
+                </div>
+
+                <div id="lessons-list" class="sidebar-list">
+                    <!-- Lessons will be populated here -->
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="images/minorah image.jpg" alt="Logo">
+                    <h3>Kaloleni Church</h3>
+                </div>
+                <p class="footer-desc">A spiritual home dedicated to worshiping Elohim and serving our community with
+                    love and grace.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61584533983372" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com/@churchofelohimkaloleni" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@churchofelohimkaloleni?_r=1&_t=ZS-93fr7UsleOz" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="watch online.html">Watch Online</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="archives.html">Archives</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Kaloleni, Nairobi, Kenya</span></li>
+                    <li><i class="fas fa-phone"></i> <span>+254 712 345 678</span></li>
+                    <li><i class="fas fa-envelope"></i> <span>info@kalolenichurch.org</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Sat: 9:00 AM - 4:00 PM</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Kaloleni Church of Elohim. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PDF Preview Modal (Hidden by default) -->
+    <div id="pdf-modal" class="modal-overlay">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 id="modal-title">Document Title</h4>
+                <button id="modal-close" class="modal-close-btn" aria-label="Close modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- PDF.js viewer iframe -->
+                <iframe id="pdf-viewer" src="72-Sebat.pdf" frameborder="0" width="100%" height="100%"></iframe>
+
+                <!-- Fallback for simple embed -->
+                <!-- <embed id="pdf-embed" src="78-tibet.pdf" type="application/pdf" width="100%" height="100%"> -->
+            </div>
+
+            <div class="modal-footer">
+                <div class="modal-nav">
+                    <button id="modal-prev" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i>
+                        <span data-key="prevBtn">Previous</span>
+                    </button>
+                    <button id="modal-next" class="btn btn-secondary">
+                        <span data-key="nextBtn">Next</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <a id="modal-download" href="#" download class="btn btn-primary">
+                    <i class="fas fa-download"></i>
+                    <span data-key="downloadBtn">Download</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Viewer.js (for PDF.js) - this points to a web-based viewer -->
+    <!-- This is a simple way to get a nice PDF viewer interface -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+
+    <!-- Your Custom JavaScript -->
+    <script src="script.js/Archive.js"></script>
+</body>
+
+</html>

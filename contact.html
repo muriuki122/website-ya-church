@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kaloleni Church of Elohim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +254 700 000 000</span>
+                <span><i class="fas fa-envelope"></i> info@kalolenichurch.org</span>
+            </div>
+            <div class="language-switcher">
+                <div class="current-lang" id="current-language">EN</div>
+                <ul class="language-dropdown">
+                    <li data-lang="en">English</li>
+                    <li data-lang="sw">Kiswahili</li>
+                    <li data-lang="rw">Kinyarwanda</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/minorah image.jpg" alt="Kaloleni Church Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1 data-translate="site-name">Kaloleni Church</h1>
+                    <p data-translate="site-tagline">Of Elohim</p>
+                </div>
+            </div>
+            <nav class="nav-container">
+                 <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="watch online.html"><i class="fas fa-video"></i> Watch online</a></li>
+            <li><a href="about us.html" ><i class="fas fa-book-bible"></i> about us</a></li>
+            <li><a href="archives.html"><i class="fas fa-archive"></i> Archives</a></li>
+            <li><a href="contact.html"class='active'><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero contact-hero">
+        <div class="container hero-content">
+            <h1 data-translate="hero-title">Get In Touch</h1>
+            <p data-translate="hero-subtitle">We are here to pray with you and answer any questions you may have about
+                our ministry.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container grid-container">
+            <!-- Contact Info Sidebar -->
+            <div class="contact-info-cards">
+                <div class="info-card">
+                    <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-text">
+                        <h4 data-translate="card-location">Our Location</h4>
+                        <p data-translate="card-address">Kaloleni, Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                    <div class="info-text">
+                        <h4 data-translate="card-phone">Call Us</h4>
+                        <p>+254 700 000 000</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                    <div class="info-text">
+                        <h4 data-translate="card-email">Email Us</h4>
+                        <p>info@kalolenichurch.org</p>
+                    </div>
+                </div>
+                <div class="info-card sabbath-card">
+                    <div class="icon-box"><i class="fas fa-clock"></i></div>
+                    <div class="info-text">
+                        <h4 data-translate="card-sabbath">Sabbath Hours</h4>
+                        <p data-translate="sabbath-time">Saturday: 9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h2 data-translate="form-title">Send a Message</h2>
+                    <p data-translate="form-subtitle">Fill out the form below and we will get back to you as soon as
+                        possible.</p>
+                </div>
+                <form id="contact-form" class="main-form" action="https://formspree.io/f/YOUR_ID" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-translate="label-name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="label-email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-translate="label-subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general" data-translate="opt-general">General Inquiry</option>
+                            <option value="prayer" data-translate="opt-prayer">Prayer Request</option>
+                            <option value="visit" data-translate="opt-visit">Planning a Visit</option>
+                            <option value="other" data-translate="opt-other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="label-message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we help you?"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">
+                        <span data-translate="btn-send">Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-placeholder">
+                <div class="map-overlay">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3 data-translate="map-title">Find Us in Kaloleni</h3>
+                    <p data-translate="map-subtitle">Join us for the Sabbath service this weekend!</p>
+                    <a href="https://www.tiktok.com/@churchofelohimkaloleni/video/7603258848673156360?_r=1&_t=ZS-93fr7UsleOz" target="_blank" class="btn btn-primary"
+                        data-translate="btn-directions">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spiritual Verse Section -->
+    <section class="verse-section">
+        <div class="container text-center">
+            <div class="verse-box">
+                <i class="fas fa-dove"></i>
+                <p class="verse-text" data-translate="bible-verse">"The Lord is near to all who call on him, to all who
+                    call on him in truth."</p>
+                <span class="verse-ref" data-translate="bible-ref">Psalm 145:18</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="images/minorah image.jpg" alt="Logo">
+                    <h2 data-translate="footer-church-name">Kaloleni Church</h2>
+                </div>
+                <p data-translate="footer-desc">A spiritual home dedicated to worshiping Elohim and serving our
+                    community with love and grace.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61584533983372" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com/@churchofelohimkaloleni" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@churchofelohimkaloleni?_r=1&_t=ZS-93fr7UsleOz" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 data-translate="footer-quick-links">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" data-translate="nav-home">Home</a></li>
+                    <li><a href="watch online.html" data-translate="nav-watch">Watch Online</a></li>
+                    <li><a href="about us.html" data-translate="nav-about">About Us</a></li>
+                    <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-translate="footer-newsletter">Newsletter</h4>
+                <p data-translate="footer-newsletter-p">Subscribe to get weekly sermon highlights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p data-translate="footer-copy">&copy; 2026 Kaloleni Church of Elohim. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div id="notification-success" class="notification-toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span id="notification-message">Message sent successfully!</span>
+        </div>
+    </div>
+
+    <script src="script.js/contact.js"></script>
+</body>
+
+</html>

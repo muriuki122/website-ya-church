@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaloleni church of Elohim - Live show</title>
+    <link rel="stylesheet" href="style/watch online.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <div class="service-times">
+                <span><i class="fas fa-church"></i> Saturday 9:00 AM | friday 6:30 PM</span>
+            </div>
+            <div class="language-switcher">
+                <span id="current-language">EN</span>
+                <ul class="language-dropdown">
+                    <li data-lang="en">English</li>
+                    <li data-lang="sw">Swahili</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/minorah image.jpg" alt="Church Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Kaloleni Church</h1>
+
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                 <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="watch online.html"class='active'><i class="fas fa-video"></i> Watch online</a></li>
+            <li><a href="about us.html" ><i class="fas fa-book-bible"></i> about us</a></li>
+            <li><a href="archives.html"><i class="fas fa-archive"></i> Archives</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Experience Elohims's Presence</h2>
+                <p>Join our live worship services online or in person</p>
+                <div class="hero-buttons">
+                    <a href="watch online.html" class="btn btn-primary">Watch Live</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Live Stream Section -->
+    <section id="live" class="live-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Live Worship</span></h2>
+                <p>Join us for today's service</p>
+            </div>
+
+            <div class="stream-player">
+                <!-- Replace PLAYLIST_ID with your actual playlist ID -->
+                <iframe
+                    src="https://www.youtube.com/embed/videoseries?list=PL6bNxJpj7Ejx08BLEzM-ze-tXRR5BcKxB&autoplay=1&mute=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="stream-info">
+                <div class="stream-status">
+                    <span class="live-badge"><i class="fas fa-circle"></i> LIVE NOW</span>
+                    <h3>Saturday Service</h3>
+                    <p class="sermon-title">"MITHALI 4:23"
+                        (linda moyo wako kuliko yote uyalindayo; maana ndiko zitokako chemchemi za uzima.)
+                    </p>
+                </div>
+
+                <div class="stream-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span> All services</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Fri 6:30 PM | Sat 9:00 AM - 4:00 PM </span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Elder or Member</span>
+                    </div>
+                </div>
+
+                <div class="stream-actions">
+                    <button class="btn btn-youtube" id="btn-subscribe-live">
+                        <i class="fab fa-youtube"></i> Subscribe
+                    </button>
+                    <button class="btn btn-notify" id="btn-check-live">
+                        <i class="fas fa-sync"></i> Check Live
+                    </button>
+                    <button class="btn btn-notify" id="btn-notify-me">
+                        <i class="fas fa-bell"></i> Notify Me
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h3>Never Miss a Service</h3>
+                    <p>Get notified when we go live and receive weekly sermon updates</p>
+                </div>
+                <form class="cta-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Upcoming Events</span></h2>
+            </div>
+
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">Shabbat (The Sabbath) </span>
+                        <span class="month"> Sunset Friday to nightfall Saturday.</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Rest, spiritual renewal, and remembrance of Creation/Exodus.</h3>
+                        <p class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 4:00 PM</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Church Sanctuary</p>
+                        <a href="archives.html" class="event-link">More Details</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">Pesach (Passover)</span>
+                        <span class="month">15–21 Nissan (Spring).</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Eating only unleavened bread (matzah)</h3>
+                        <p class="event-time"><i class="fas fa-clock"></i> 7 days.</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i>Takes 7 days</p>
+                        <a href="archives.html" class="event-link">More Details</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">Shavuot (Weeks)</span>
+                        <span class="month">6 Sivan (50 days after Passover).</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>All-night Torah study (Tikkun Leil Shavuot).</h3>
+                        <p class="event-time"><i class="fas fa-clock"></i> Theme: Receiving the Torah at Mount Sinai.
+                        </p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Naivasha</p>
+                        <a href="archives.html" class="event-link">More Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-footer">
+                <a href="about us.html" class="btn btn-outline">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="images/minorah image.jpg" alt="Logo">
+                    <h3>Kaloleni Church</h3>
+                </div>
+                <p class="footer-desc">A spiritual home dedicated to worshiping Elohim and serving our community with
+                    love and grace.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61584533983372" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com/@churchofelohimkaloleni" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@churchofelohimkaloleni?_r=1&_t=ZS-93fr7UsleOz" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="watch online.html">Watch Online</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="archives.html">Archives</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Kaloleni, Nairobi, Kenya</span></li>
+                    <li><i class="fas fa-phone"></i> <span>+254 712 345 678</span></li>
+                    <li><i class="fas fa-envelope"></i> <span>info@kalolenichurch.org</span></li>
+                    <li><i class="fas fa-clock"></i> <span>Sat: 9:00 AM - 4:00 PM</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Kaloleni Church of Elohim. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notification-success" class="notification-toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-message">Subscription successful!</span>
+    </div>
+
+    <script src="script.js/watch online.js"></script>
+</body>
+
+</html>

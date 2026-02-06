@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kaloleni Church</title>
+    <link rel="stylesheet" href="style/about us .css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="images/minorah image.jpg" alt="Kaloleni Church Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Kaloleni Church</h1>
+                    <p>Of Elohim</p>
+                </div>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="watch online.html"><i class="fas fa-video"></i> Watch online</a></li>
+            <li><a href="about us.html" class='active'><i class="fas fa-book-bible"></i> about us</a></li>
+            <li><a href="archives.html"><i class="fas fa-archive"></i> Archives</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="page-hero">
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>About Kaloleni Church</h1>
+                        <p>Learn about our community, worship schedule, and traditions</p>
+                        <div class="scroll-indicator">
+                            <span>Scroll Down</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Church History Section -->
+            <section class="history-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Story</h2>
+                        <div class="section-divider"></div>
+                    </div>
+
+                    <div class="history-content">
+                        <div class="history-text">
+                            <div class="history-item">
+                                <div class="history-year">1995</div>
+                                <div class="history-details">
+                                    <h3>The Beginning</h3>
+                                    <p>Kaloleni Church was established with a vision to create a vibrant community of
+                                        believers dedicated to serving God and spreading His message of love and
+                                        salvation.</p>
+                                </div>
+                            </div>
+
+                            <div class="history-item">
+                                <div class="history-year">2005</div>
+                                <div class="history-details">
+                                    <h3>Growth & Expansion</h3>
+                                    <p>Over the years, we have grown into a diverse congregation that welcomes people
+                                        from all walks of life, united in our faith and commitment to Christian values.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="history-item">
+                                <div class="history-year">2020</div>
+                                <div class="history-details">
+                                    <h3>Digital Ministry</h3>
+                                    <p>Our church is built on the foundation of prayer, worship, and service, following
+                                        the example set by Jesus Christ. We expanded our reach through online services.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="history-visual">
+                            <div class="history-image">
+                                <img src="https://images.unsplash.com/photo-1640793202113-93eb9a57915c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2hpdGUlMjBkb3ZlfGVufDB8fDB8fHww"
+                                    alt="Kaloleni Church Building">
+                            </div>
+                            <div class="history-stats">
+                                <div class="stat">
+                                    <span class="stat-number">500+</span>
+                                    <span class="stat-label">Members</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">25</span>
+                                    <span class="stat-label">Years</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">10</span>
+                                    <span class="stat-label">Ministries</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Service Schedule Section -->
+            <section class="schedule-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Service Schedule</h2>
+                        <div class="section-divider"></div>
+                        <p>Join us for our weekly worship services and fellowship</p>
+                    </div>
+
+                    <div class="schedule-container">
+                        <div class="schedule-tabs">
+                            <button class="schedule-tab active" data-day="saturday">Saturday Service</button>
+                            <button class="schedule-tab" data-day="friday">Friday Service</button>
+                            <button class="schedule-tab" data-day="weekly">Weekly Activities</button>
+                        </div>
+
+                        <div class="schedule-content">
+                            <div class="schedule-day active" id="saturday">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">9:00 AM</div>
+                                        <div class="timeline-content">
+                                            <h3>Prayer & Opening</h3>
+                                            <p>We begin our service with communal prayer and worship songs to prepare
+                                                our hearts for God's message.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">9:30 AM</div>
+                                        <div class="timeline-content">
+                                            <h3>Morning Sermon</h3>
+                                            <p>A brief but powerful sermon to inspire and guide us through the week
+                                                ahead.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">10:00 AM</div>
+                                        <div class="timeline-content">
+                                            <h3>Bible Study</h3>
+                                            <p>An in-depth Bible lesson where we explore scripture and discuss how to
+                                                apply it in our daily lives.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">11:30 AM</div>
+                                        <div class="timeline-content">
+                                            <h3>Tea Break</h3>
+                                            <p>A time for fellowship and refreshments as we connect with one another.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">12:00 PM</div>
+                                        <div class="timeline-content">
+                                            <h3>Group Presentations</h3>
+                                            <p>Special presentations by our various groups and welcoming of visitors.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">1:00 PM</div>
+                                        <div class="timeline-content">
+                                            <h3>Lunch</h3>
+                                            <p>We share a meal together, strengthening our bonds as a church family.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">2:00 PM</div>
+                                        <div class="timeline-content">
+                                            <h3>Afternoon Session</h3>
+                                            <p>Individual songs and choir presentations, followed by a closing sermon
+                                                before we depart.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule-day" id="friday">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">6:30 PM</div>
+                                        <div class="timeline-content">
+                                            <h3>Evening Worship</h3>
+                                            <p>We gather for an evening of prayer, worship, and reflection to end the
+                                                week.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">7:15 PM</div>
+                                        <div class="timeline-content">
+                                            <h3>Bible Study</h3>
+                                            <p>An interactive Bible study session focusing on practical Christian
+                                                living.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-time">8:00 PM</div>
+                                        <div class="timeline-content">
+                                            <h3>Fellowship</h3>
+                                            <p>Time for sharing testimonies and building relationships within the church
+                                                community.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="schedule-day" id="weekly">
+                                <div class="weekly-activities">
+                                    <div class="activity-card">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-pray"></i>
+                                        </div>
+                                        <div class="activity-details">
+                                            <h3>Prayer Meetings</h3>
+                                            <p>Wednesday | 7:00 PM</p>
+                                            <p>Join us for corporate prayer and intercession.</p>
+                                        </div>
+                                    </div>
+                                    <div class="activity-card">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-music"></i>
+                                        </div>
+                                        <div class="activity-details">
+                                            <h3>Choir Practice</h3>
+                                            <p>Thursday | 6:00 PM</p>
+                                            <p>Our choir prepares for Sunday worship services.</p>
+                                        </div>
+                                    </div>
+                                    <div class="activity-card">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="activity-details">
+                                            <h3>Youth Fellowship</h3>
+                                            <p>Friday | 5:00 PM</p>
+                                            <p>Young people gathering for Bible study and activities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Music Ministry Section -->
+            <section class="music-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Music Ministry</h2>
+                        <div class="section-divider"></div>
+                        <p>Experience the power of worship through our diverse music groups</p>
+                    </div>
+
+                    <div class="music-groups">
+                        <div class="music-group">
+                            <div class="group-image">
+                               <img src="images/choir.jpg" alt="Choir Logo" class="logo-img">
+                                    alt="Choir Group">
+                                <div class="group-overlay">
+                                    <a href="#" class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="group-content">
+                                <div class="group-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Choir</h3>
+                                <p>Our choir meets every Thursday to practice hymns and worship songs that uplift our
+                                    congregation during services.</p>
+                                <div class="meeting-time">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Every Thursday at 6:00 PM</span>
+                                </div>
+                                <a href="https://youtu.be/EILQY1d-U_Y?si=tF_uF-vyi9nPCIg9"
+                                    class="youtube-link" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Listen to Our Songs</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="music-group">
+                            <div class="group-image">
+                                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                    alt="Group B">
+                                <div class="group-overlay">
+                                    <a href="#" class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="group-content">
+                                <div class="group-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                                <h3>Group B</h3>
+                                <p>This group specializes in traditional hymns and contemporary worship songs that
+                                    resonate with our diverse congregation.</p>
+                                <a href="https://youtu.be/t4pfHfSkHB4?si=p3F6RzC5cePouFNO"
+                                    class="youtube-link" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Listen to Our Songs</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="music-group">
+                            <div class="group-image">
+                                <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                    alt="Highschoolers">
+                                <div class="group-overlay">
+                                    <a href="watch online.html" class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="group-content">
+                                <div class="group-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3>Highschoolers</h3>
+                                <p>Our youth group brings energy and contemporary Christian music that speaks to the
+                                    younger generation.</p>
+                                <a href="https://youtu.be/I3Wg_UExSnM?si=4XkP31RActf6QuRp"
+                                    class="youtube-link" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Listen to Our Songs</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Israelite Ceremonies Section -->
+            <section class="ceremonies-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Israelite Ceremonies We Observe</h2>
+                        <div class="section-divider"></div>
+                        <p>As part of our spiritual practice, we remember and observe certain ceremonies that connect us
+                            to our biblical roots.</p>
+                    </div>
+
+                    <div class="ceremonies-grid">
+                        <div class="ceremony-card">
+                            <div class="ceremony-icon">
+                                <i class="fas fa-bread-slice"></i>
+                            </div>
+                            <h3>Passover</h3>
+                            <p>We commemorate the Exodus from Egypt and reflect on Jesus as our Passover Lamb who was
+                                sacrificed for us.</p>
+                            <div class="ceremony-time">Observed in Spring</div>
+                        </div>
+
+                        <div class="ceremony-card">
+                            <div class="ceremony-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <h3>Pentecost (Shavuot)</h3>
+                            <p>We celebrate the giving of the Torah at Mount Sinai and the outpouring of the Holy Spirit
+                                in the New Testament.</p>
+                            <div class="ceremony-time">50 days after Passover</div>
+                        </div>
+
+                        <div class="ceremony-card">
+                            <div class="ceremony-icon">
+                                <i class="fas fa-trumpet"></i>
+                            </div>
+                            <h3>Feast of Trumpets</h3>
+                            <p>A day of blowing trumpets and spiritual preparation, looking forward to the return of
+                                Christ.</p>
+                            <div class="ceremony-time">Autumn observance</div>
+                        </div>
+
+                        <div class="ceremony-card">
+                            <div class="ceremony-icon">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                            <h3>Feast of Tabernacles</h3>
+                            <p>We remember Israel's wilderness journey and look forward to the Kingdom of God when He
+                                will dwell with us.</p>
+                            <div class="ceremony-time">Autumn observance</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- YouTube Reminder Section -->
+            <section class="youtube-reminder">
+                <div class="container">
+                    <div class="reminder-content">
+                        <div class="reminder-text">
+                            <h2>Follow Us on YouTube</h2>
+                            <p>Can't join us in person? Watch our services live or catch up with previous sermons on our
+                                YouTube channel. Don't forget to subscribe and turn on notifications so you never miss
+                                an update!</p>
+                            <button class="youtube-btn" id="subscribeBtn">
+                                <i class="fab fa-youtube"></i>
+                                <span>Subscribe Now</span>
+                            </button>
+                        </div>
+                        <div class="reminder-visual">
+                            <div class="youtube-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="subscriber-count">
+                                <span class="count">1,250</span>
+                                <span class="label">Subscribers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Leadership Section -->
+            <section class="leadership-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Leadership</h2>
+                        <div class="section-divider"></div>
+                        <p>Meet the dedicated individuals guiding our spiritual journey</p>
+                    </div>
+
+                    <div class="leaders-grid">
+                        <div class="leader-card">
+                            <div class="leader-image">
+                                <img src="images/baba-shiku.jpeg" alt="Elder John Mwangi" class="logo-img">
+                                    alt="Elder John">
+                            </div>
+                            <div class="leader-details">
+                                <h3>Elder John Mwangi</h3>
+                                <p class="leader-role">Senior Elder</p>
+                                <p>Leading our congregation with wisdom and dedication for over 15 years.</p>
+                            </div>
+                        </div>
+
+                        <div class="leader-card">
+                            <div class="leader-image">
+                               <img src="images/baba-wainaina.jpeg" alt="elder wainaina" class="logo-img">
+                            </div>
+                            <div class="leader-details">
+                                <h3>Elder Wainaina</h3>
+                                <p class="leader-role"> Leader's Ministry</p>
+                                <p>Overseeing  community outreach programs.</p>
+                            </div>
+                        </div>
+
+                        <div class="leader-card">
+                            <div class="leader-image">
+                                 <img src="images/baba-mumbi.jpeg" alt="elder mumbi" class="logo-img">
+                                    alt="Brother David">
+                            </div>
+                            <div class="leader-details">
+                                <h3>Brother David kigaita</h3>
+                                <p class="leader-role">Deacon/Youth Ministry Coordinator</p>
+                                <p>Engaging our youth through dynamic programs and spiritual guidance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/minorah image.jpg" alt="Logo">
+                        <h3>Kaloleni Church</h3>
+                    </div>
+                    <p class="footer-desc">A spiritual home dedicated to worshiping Elohim and serving our community
+                        with love and grace.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61584533983372" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@churchofelohimkaloleni" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@churchofelohimkaloleni?_r=1&_t=ZS-93fr7UsleOz" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="watch online.html">Watch Online</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="archives.html">Archives</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> <span>Kaloleni, Nairobi, Kenya</span></li>
+                        <li><i class="fas fa-phone"></i> <span>+254 712 345 678</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>info@kalolenichurch.org</span></li>
+                        <li><i class="fas fa-clock"></i> <span>Sat: 9:00 AM - 4:00 PM</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Kaloleni Church of Elohim. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="SCRIPT.JS/ABOUT US.js"></script>
+</body>
+
+</html>
